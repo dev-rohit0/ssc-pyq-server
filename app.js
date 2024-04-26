@@ -5,7 +5,7 @@ const connectDB = require('./config/db');
 const questionsRoutes = require('./routes/questionsRoutes');
 const cors = require('cors');
 const app = express();
-
+require('dotenv').config()
 // Middlewares
 app.use(bodyParser.json());
 app.use(cors({
