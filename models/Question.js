@@ -20,7 +20,7 @@ const questionSchema = new mongoose.Schema({
         required: true
     },
     year_asked: {
-        type: Number,
+        type: String,
         required: true
     },
     topic: {
