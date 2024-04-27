@@ -9,12 +9,9 @@ require('dotenv').config()
 // Middlewares
 app.use(bodyParser.json());
 app.use(cors({
-    origin: [
-        'https://exp.host',
-        'https://*.exp.direct' // Allow subdomains of exp.direct
-    ],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Add other HTTP methods as needed
-    allowedHeaders: ['Content-Type', 'Authorization'], // Add other headers as needed
+    origin: 'https://sscpyqadmin.netlify.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 
 // Connect to MongoDB
